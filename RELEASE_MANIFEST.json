@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "release_candidate": "1.0.0-rc1",
+  "generated_at": "2026-09-14",
+  "source_revision": "df82d51642d85ff036340441d4fe83a8b8865e17",
+  "repository_identity": "gladxywei/FRE-Conv",
+  "payload_file_count": 61,
+  "total_payload_bytes": 305415,
+  "manifest_self_excluded": true,
+  "licensing_status": "MIT-original-contributions-with-third-party-terms",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 164,
+      "sha256": "4a477966c8b47274b3ec306a9c75e6ccfdc6a461423da3360e41b35cc98d331c"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 486,
+      "sha256": "059d61fa4f13b51265a60e2f51f85cdc2fe18ba3cec5dde1fccf526685044a37"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1240,
+      "sha256": "b2ec339b9c97c66ee8e59fe3e466ebe2341aefd1badc596320445d891365d789"
+    },
+    {
+      "path": "LICENSES/HSIR-MIT.txt",
+      "bytes": 1068,
+      "sha256": "3988063eb54ee5a1b5173bcd4e6f51ba4e57932e24143a951747f49ddac64419"
+    },
+    {
+      "path": "LICENSES/HyDe-BSD-3-Clause.txt",
+      "bytes": 1527,
+      "sha256": "6313d2e4c1d8250bc89a955638516f99bcfa2dde5dbc3af7d965f0a6a2ab0804"
+    },
+    {
+      "path": "LICENSES/e2cnn-BSD-3-Clause-Clear.txt",
+      "bytes": 1661,
+      "sha256": "07123671f791bf5eda0b63935f3d313045a1cf76d063c2169ebe61300e6cc930"
+    },
+    {
+      "path": "LICENSES/pytorch-cifar-MIT.txt",
+      "bytes": 1065,
+      "sha256": "c1ae623a43452c53afe03e2e04c81aee0cb1e06e9274a06de8c60908c9d048f0"
+    },
+    {
+      "path": "MANIFEST.in",
+      "bytes": 563,
+      "sha256": "7cc6b4bcdafbfea69087e381ce29de35aba2e73de6c1de790e48e5c05876bb70"
+    },
+    {
+      "path": "README.md",
+      "bytes": 16029,
+      "sha256": "d6c5511e0d604009c922940694a808ad9b048c264747fe04b51fcdb7c52fd835"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 15094,
+      "sha256": "3e46809b5680d1a601abe7956fe8feb824f45569a7ea32840304252e4ee00aef"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 4881,
+      "sha256": "f1e8cdb6d1e10531d7ed652719588fb1d869a8c08e66dd06569f8f680eca0384"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2777,
+      "sha256": "b07ee5d68601589481dcbe15b6d3fa94a3cce3aa8eddfccbf7cb7307b4bea9c8"
+    },
+    {
+      "path": "checkpoints/README.md",
+      "bytes": 3109,
+      "sha256": "d9a7764064df7b3fd03901e33e0ea94defc2291769619b710134f611432e2226"
+    },
+    {
+      "path": "checkpoints/manifest.json",
+      "bytes": 8558,
+      "sha256": "c84e20a6aa22c747285a03e446c772dbe7a40a57346837ac423734d6bf99a915"
+    },
+    {
+      "path": "checkpoints/registry.yaml",
+      "bytes": 9597,
+      "sha256": "58d420ae99552afc8a1247748f9461dff245d0afdf3db7eceda2499362c1b48d"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 5192,
+      "sha256": "489d48557ec5d809965d353034a66765344273a30304c3f8e6fcdcd9ebc9ad95"
+    },
+    {
+      "path": "data/registry.yaml",
+      "bytes": 2101,
+      "sha256": "266fa29cc9416d8ab7eb49e080d8ef332b87a1e7cb0f1562385d40f890f516fc"
+    },
+    {
+      "path": "docs/operators.md",
+      "bytes": 7748,
+      "sha256": "bdd3303d49d93359784e20b8c77ad985acf7dacdfa01aa2fce0ba31c6be1195c"
+    },
+    {
+      "path": "docs/operators.zh-CN.md",
+      "bytes": 7062,
+      "sha256": "5ce8f87a91dd2e346b52b06c90b02456b1bb8f41d3808e751764ccd9d242bd17"
+    },
+    {
+      "path": "environment.yml",
+      "bytes": 227,
+      "sha256": "2052592e5c49bb43396e26562637d6eabdcfdd91d20c1b9e506344a76e8a5f23"
+    },
+    {
+      "path": "examples/operator_quickstart.py",
+      "bytes": 1297,
+      "sha256": "3f8d8e08258c0ecace5483effd3056a65f7f601adc014cd12bed460128373760"
+    },
+    {
+      "path": "freconv/__init__.py",
+      "bytes": 534,
+      "sha256": "54421e37d239883afd2d6e0a5f6dca2302e5146c736b8ac07f7d1ac5dc7a55d6"
+    },
+    {
+      "path": "freconv/cli.py",
+      "bytes": 3131,
+      "sha256": "91bd66ca34e446194fa26c6d37f6501f432f752df3beaed9791bf09fa3f173ec"
+    },
+    {
+      "path": "freconv/data/__init__.py",
+      "bytes": 129,
+      "sha256": "17d803220f0ee108bf2bc032eebf6775cd93ea5e298cc6442d3b442f669094b0"
+    },
+    {
+      "path": "freconv/data/datasets.py",
+      "bytes": 4213,
+      "sha256": "0d51d6e2a7018684d3f077323bccfe09468f4b711efc126fe6782cc8e5035a81"
+    },
+    {
+      "path": "freconv/data/noise.py",
+      "bytes": 7043,
+      "sha256": "9937d8d9cd22fdc606e08bd80540c655bb3fa60e298b38ef042cdd330e8298e1"
+    },
+    {
+      "path": "freconv/data/prepare.py",
+      "bytes": 9404,
+      "sha256": "9a624ac33baab015a4b54d698f9f531d9a48a084c0503999959cfb48cb900e11"
+    },
+    {
+      "path": "freconv/data/transforms.py",
+      "bytes": 5388,
+      "sha256": "988f88272245c0c62a5b01b7999b4e52ac164caeadd4ebaf1d84ff4b338c0208"
+    },
+    {
+      "path": "freconv/download_checkpoints.py",
+      "bytes": 5020,
+      "sha256": "f2d078632959974f037fd633d192ba01cec27be62aac551aa65250a21a00968f"
+    },
+    {
+      "path": "freconv/evaluate.py",
+      "bytes": 19525,
+      "sha256": "6a6b998215d84c60997864018a153a8abbdacb87df94abd2017df6595fbe1a26"
+    },
+    {
+      "path": "freconv/evaluate_real.py",
+      "bytes": 12790,
+      "sha256": "bbc9fac47fa8d6322634a19c799710ecae7e7169cf8bb7eb64511ae4d38ec38c"
+    },
+    {
+      "path": "freconv/experiment.py",
+      "bytes": 3038,
+      "sha256": "670849ce8eb1425ab14c9419f89898625e203fdee72feec3d6adef7c14936006"
+    },
+    {
+      "path": "freconv/helper.py",
+      "bytes": 1377,
+      "sha256": "910ca5c2f27b5be00f66af34fa99bad756b246838db345e3c8c12b06efb47807"
+    },
+    {
+      "path": "freconv/inference.py",
+      "bytes": 1839,
+      "sha256": "d9b6ff8f20319a8473242ca65a2f9e0d428fe02958adba046cbc5d17a3170fb7"
+    },
+    {
+      "path": "freconv/logging.py",
+      "bytes": 3006,
+      "sha256": "7a6902ea413db6e874b1592db7550a9f34b60e930a4fa9f023187f9d4d314f7d"
+    },
+    {
+      "path": "freconv/losses.py",
+      "bytes": 232,
+      "sha256": "fd08f1c85e12a9d7936b6b0c5fd823aee49c7067937e20f5cb2f5fa823922170"
+    },
+    {
+      "path": "freconv/models/FCNN_3D_XY.py",
+      "bytes": 11043,
+      "sha256": "860a35e5174b133bc27aed884fe3e45e9b594e3fb7e4d8fc403c3bf116874432"
+    },
+    {
+      "path": "freconv/models/FCNN_3D_XY_new.py",
+      "bytes": 12887,
+      "sha256": "d730dafd6e39cc9d305bc008cfa8feb6f9662c25486e56b4c61268f7f6fca2de"
+    },
+    {
+      "path": "freconv/models/__init__.py",
+      "bytes": 306,
+      "sha256": "9ff6ce6a2f0d1358929deadffe09d526702187174a21433cd8d1087e17d5a3d5"
+    },
+    {
+      "path": "freconv/models/denet.py",
+      "bytes": 5283,
+      "sha256": "0b6be9852f37856a84b7d8c5cabdd493c58be0cfdef41bc7c1185e1f55dc8568"
+    },
+    {
+      "path": "freconv/models/fman.py",
+      "bytes": 10714,
+      "sha256": "427aa78b485a3b29af39bc8affd74904af1919c97fe28c91cf0332af4fa46992"
+    },
+    {
+      "path": "freconv/models/fmemnet.py",
+      "bytes": 3804,
+      "sha256": "74f2029a530b69531028f895e025604d9bab7cb8a97448000bade6b95bbe5194"
+    },
+    {
+      "path": "freconv/models/man.py",
+      "bytes": 7588,
+      "sha256": "1636cf201cb2b307dcc909d476034167c6fb482f036e2a9f04cd3de05290109f"
+    },
+    {
+      "path": "freconv/models/memnet.py",
+      "bytes": 2452,
+      "sha256": "f6be9a014869a24f9473c5a89634094fea6cb89b522c91852c1501cd140b5ec9"
+    },
+    {
+      "path": "freconv/models/qrnn/Fconv_combinations.py",
+      "bytes": 5344,
+      "sha256": "44f1ada43ae2769b5c7e21341e8cc5273d55e0ce7a0c36032b7dbef13636170c"
+    },
+    {
+      "path": "freconv/models/qrnn/Fconv_qrnn3d.py",
+      "bytes": 13904,
+      "sha256": "c10031f35b98d297524c1abba4fb7f2d2970bd10e418592f8d9921aea7e1c328"
+    },
+    {
+      "path": "freconv/models/qrnn/__init__.py",
+      "bytes": 110,
+      "sha256": "401cdcab3a3dbda0d05d04f982e007d2b7913414fd1454dfda9b8f2861682f9d"
+    },
+    {
+      "path": "freconv/models/qrnn/combinations.py",
+      "bytes": 2353,
+      "sha256": "c199179e0227b2be5d43800254a21ffdd82c3deb4376f820e0f91f948c27709b"
+    },
+    {
+      "path": "freconv/models/qrnn/qrnn3d.py",
+      "bytes": 11346,
+      "sha256": "5b76dc15c7065d74f182a42cc8882c3340b930ea071aa613c5aa8fc5b33991f3"
+    },
+    {
+      "path": "freconv/models/registry.py",
+      "bytes": 2710,
+      "sha256": "66de830769aaa4eb2970e12bcc5fd12f482d319aa06718cef5d569bbd6fd0110"
+    },
+    {
+      "path": "freconv/ops.py",
+      "bytes": 6341,
+      "sha256": "cecb6c2f0ebeab63034d43106229f13db50f7a2d7e3ea14e5a20ed81a3daea54"
+    },
+    {
+      "path": "freconv/progress.py",
+      "bytes": 2272,
+      "sha256": "ac796c9e59c685e3d941f640a06d614e74d711d352f7112de4c5eace271eec5b"
+    },
+    {
+      "path": "freconv/train.py",
+      "bytes": 8627,
+      "sha256": "94bff69c98144bfb3f4f69e49e39648e477732c624b1875ee554fc8ef6a08ad9"
+    },
+    {
+      "path": "freconv/training_utils.py",
+      "bytes": 4842,
+      "sha256": "695922ffcdab8d6345dbbb9422e02098bdfa1dd015dd9d54a157a098cf7d432b"
+    },
+    {
+      "path": "freconv/utils.py",
+      "bytes": 2299,
+      "sha256": "e4948f4255bb0c4ec066640f34b66f065fd2adb0cf5df2d154e41aec934bb41a"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 815,
+      "sha256": "7725d0b7d8e312089b4211470ceb6517482865cf6b05bb5ef2aec0a36e3f6184"
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 3170,
+      "sha256": "30dba129b832cef0a812053730e5757c42976710e3fd1ede0a8a2e00dfd1b0d8"
+    },
+    {
+      "path": "results/chikusei_aggregate.csv",
+      "bytes": 910,
+      "sha256": "1e52a06ca2c8affd4e43df85aae5fd4e1d288f3ebc14bb2624ce7d065870cb54"
+    },
+    {
+      "path": "results/chikusei_per_mode.csv",
+      "bytes": 8069,
+      "sha256": "122e0255af227c707a83c30b19cee3002681cac14ca92da2e5085348e8f520f4"
+    },
+    {
+      "path": "results/icvl_paper_results.csv",
+      "bytes": 4822,
+      "sha256": "f412c4e5f2817d32ab70e9f62a9b8ec2993cc14bdbe7e717df4dd118957450c2"
+    },
+    {
+      "path": "tests/test_ops.py",
+      "bytes": 5289,
+      "sha256": "5ee2f838ccca68aa60d16d72734f4c95138959fc14230e6815fdb6c2dbfed4dd"
+    }
+  ]
+}

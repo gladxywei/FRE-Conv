@@ -1,0 +1,16 @@
+data/ICVL/
+data/Chikusei/
+data/WDC_Mall/
+checkpoints/paper-v1/
+experiments/
+*.pth
+*.pt
+*.ckpt
+*.npy
+*.npz
+__pycache__/
+*.py[cod]
+.DS_Store
+build/
+dist/
+*.egg-info/

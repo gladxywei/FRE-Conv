@@ -1,0 +1,63 @@
+version: 1
+datasets:
+  icvl:
+    name: ICVL
+    kind: synthetic_clean
+    description: Clean hyperspectral images used for supervised training and synthetic-noise evaluation.
+    source_url: https://icvl.cs.bgu.ac.il/pages/researches/hyperspectral-imaging.html
+    source_mirror: https://huggingface.co/datasets/ICVL-BGU/ICVL_HS_2016
+    source_subset: mat/
+    source_array_key: rad
+    expected_bands: 31
+    root: data/ICVL
+    train_crop_size: [64, 64]
+    validation_crop_size: [512, 512]
+    default_eval_crop_size: [512, 512]
+    band_norm: true
+    deterministic_file_order: true
+    splits:
+      train:
+        path: data/ICVL/train
+        expected_file_count: 100
+      vval:
+        path: data/ICVL/vval
+        expected_file_count: 10
+      test:
+        path: data/ICVL/test
+        expected_file_count: 50
+  chikusei:
+    name: Chikusei
+    kind: synthetic_clean
+    description: Eight fixed 512 by 512 crops for zero-shot synthetic-noise evaluation.
+    source_url: https://naotoyokoya.com/Download.html
+    source_mirror: https://huggingface.co/datasets/danaroth/chikusei
+    root: data/Chikusei
+    expected_bands: 128
+    default_eval_crop_size: [512, 512]
+    band_norm: true
+    deterministic_file_order: true
+    source_files:
+      cube:
+        name: HyperspecVNIR_Chikusei_20140729.bsq
+        bytes: 1504561920
+        sha256: 89715ed9a6ab725644707b2c1732642dd1634755f3914d0ecec9bc77f62a741b
+      header:
+        name: HyperspecVNIR_Chikusei_20140729.hdr
+        sha256: 8e68b2d13005a96d8d5e057e626c47dd8eb1993c78d4492038a49544360d5d14
+    splits:
+      test:
+        path: data/Chikusei/test
+        expected_file_count: 8
+  wdc_mall:
+    name: Washington DC Mall
+    kind: real_noisy
+    description: Real noisy HYDICE cube for qualitative zero-shot evaluation without clean ground truth.
+    source_url: https://engineering.purdue.edu/~biehl/MultiSpec/hyperspectral.html
+    root: data/WDC_Mall
+    expected_bands: 191
+    default_eval_crop_size: [256, 256]
+    band_norm: true
+    deterministic_file_order: true
+    splits:
+      real:
+        path: data/WDC_Mall/real

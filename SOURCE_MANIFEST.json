@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "release_candidate": "1.0.0-rc1",
+  "exported_at": "2026-09-01",
+  "canonical_repository": "FRE-Conv",
+  "canonical_revision": "df82d51642d85ff036340441d4fe83a8b8865e17",
+  "retained_scope": [
+    "FRE-Conv operators",
+    "DeNet3D, MemNet3D, QRNN3D, and MAN Conv/T8/T4 paper models",
+    "ICVL training and synthetic-noise evaluation",
+    "Chikusei zero-shot synthetic-noise evaluation",
+    "Washington DC Mall qualitative no-ground-truth evaluation",
+    "noise, data, inference, metric, and checkpoint verification helpers"
+  ],
+  "direct_source_families": {
+    "operators": [
+      "code/models/FCNN_3D_XY.py",
+      "code/models/FCNN_3D_XY_new.py"
+    ],
+    "backbones": [
+      "code/models/Fdenet_res_v2.py",
+      "code/models/memnet2.py",
+      "code/models/fmemnet2.py",
+      "code/models/man.py",
+      "code/models/Fman.py",
+      "code/models/qrnn/"
+    ],
+    "protocols": [
+      "code/legacy/hsidenoising_sert_gauss.py",
+      "code/legacy/hsidenoising_sert_complex.py",
+      "code/eval.py",
+      "code/eval_real.py"
+    ],
+    "evidence": [
+      "checkpoints/initial/manifest.yaml",
+      "paper ICVL tables",
+      "formal Chikusei scene-level CSV records"
+    ]
+  },
+  "licensing": {
+    "project_license": "MIT",
+    "project_license_scope": "Original FRE-Conv contributions; third-party portions retain their applicable terms.",
+    "license_file": "LICENSE",
+    "third_party_notices": "THIRD_PARTY_NOTICES.md",
+    "upstream_license_texts": [
+      "LICENSES/HyDe-BSD-3-Clause.txt",
+      "LICENSES/HSIR-MIT.txt",
+      "LICENSES/pytorch-cifar-MIT.txt",
+      "LICENSES/e2cnn-BSD-3-Clause-Clear.txt"
+    ]
+  },
+  "upstream_provenance": [
+    {
+      "id": "HyDe",
+      "repository": "Helmholtz-AI-Energy/HyDe",
+      "revision": "251a4f461cd8678462cfda09009c183da1b5a092",
+      "license": "BSD-3-Clause",
+      "notice": "LICENSES/HyDe-BSD-3-Clause.txt",
+      "url": "https://github.com/Helmholtz-AI-Energy/HyDe/tree/251a4f461cd8678462cfda09009c183da1b5a092",
+      "local_files": [
+        "freconv/data/datasets.py",
+        "freconv/data/noise.py",
+        "freconv/data/transforms.py",
+        "freconv/helper.py",
+        "freconv/logging.py",
+        "freconv/losses.py",
+        "freconv/models/denet.py",
+        "freconv/models/fmemnet.py",
+        "freconv/models/memnet.py",
+        "freconv/models/qrnn/Fconv_combinations.py",
+        "freconv/models/qrnn/Fconv_qrnn3d.py",
+        "freconv/models/qrnn/combinations.py",
+        "freconv/models/qrnn/qrnn3d.py",
+        "freconv/training_utils.py",
+        "freconv/utils.py"
+      ]
+    },
+    {
+      "id": "HSIR",
+      "repository": "bit-isp/HSIR",
+      "revision": "cf6fd69e9f839ef4262d629ce1b11884c9b39fc0",
+      "license": "MIT",
+      "notice": "LICENSES/HSIR-MIT.txt",
+      "url": "https://github.com/bit-isp/HSIR/tree/cf6fd69e9f839ef4262d629ce1b11884c9b39fc0",
+      "local_files": [
+        "freconv/models/fman.py",
+        "freconv/models/man.py"
+      ]
+    },
+    {
+      "id": "F-Conv",
+      "repository": "XieQi2015/F-Conv",
+      "revision": "0b71ad8e0505fc825c0272509db2319ef4e17b25",
+      "license": null,
+      "permission_basis": "Used and distributed with permission.",
+      "url": "https://github.com/XieQi2015/F-Conv/tree/0b71ad8e0505fc825c0272509db2319ef4e17b25",
+      "local_files": [
+        "freconv/models/FCNN_3D_XY.py",
+        "freconv/models/FCNN_3D_XY_new.py"
+      ]
+    },
+    {
+      "id": "e2cnn",
+      "repository": "QUVA-Lab/e2cnn",
+      "revision": "022d6ca4a78ab666f3c149d1849e324ed1d40238",
+      "license": "BSD-3-Clause-Clear",
+      "notice": "LICENSES/e2cnn-BSD-3-Clause-Clear.txt",
+      "url": "https://github.com/QUVA-Lab/e2cnn/tree/022d6ca4a78ab666f3c149d1849e324ed1d40238",
+      "local_files": [
+        "freconv/models/FCNN_3D_XY.py",
+        "freconv/models/FCNN_3D_XY_new.py"
+      ]
+    },
+    {
+      "id": "pytorch-cifar",
+      "repository": "kuangliu/pytorch-cifar",
+      "revision": "49b7aa97b0c12fe0d4054e670403a16b6b834ddd",
+      "license": "MIT",
+      "notice": "LICENSES/pytorch-cifar-MIT.txt",
+      "url": "https://github.com/kuangliu/pytorch-cifar/tree/49b7aa97b0c12fe0d4054e670403a16b6b834ddd",
+      "local_files": [
+        "freconv/progress.py"
+      ]
+    }
+  ],
+  "checkpoint_distribution": {
+    "checkpoint_set": "paper-v1",
+    "release_tag": "checkpoints-v1",
+    "release_url": "https://github.com/gladxywei/FRE-Conv/releases/tag/checkpoints-v1",
+    "published_at": "2026-09-12T11:55:29Z",
+    "manifest": "checkpoints/manifest.json"
+  },
+  "public_operator_api": {
+    "module": "freconv.ops",
+    "layers": [
+      "FREConvLift3d",
+      "FREConv3d",
+      "FREConvReadout3d",
+      "FREBatchNorm3d"
+    ],
+    "numerical_backend": "freconv/models/FCNN_3D_XY.py",
+    "paper_models": "Retain their original backend implementations and checkpoint formats."
+  }
+}

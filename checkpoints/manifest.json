@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "checkpoint_set": "paper-v1",
+  "source_revision": "df82d51642d85ff036340441d4fe83a8b8865e17",
+  "trained_on": {
+    "dataset": "icvl",
+    "train_split": "train",
+    "validation_split": "vval",
+    "band_norm": true
+  },
+  "archive": {
+    "filename": "freconv-paper-v1-checkpoints.tar.gz",
+    "release_tag": "checkpoints-v1",
+    "url_template": "https://github.com/gladxywei/FRE-Conv/releases/download/<release-tag>/freconv-paper-v1-checkpoints.tar.gz",
+    "archive_bytes": 386400598,
+    "archive_sha256": "2b84622f5bd7177dc79d4041d74ac1826156b547b59b6d7f4f9acd03a3a6018c",
+    "availability": "available"
+  },
+  "weight_count": 24,
+  "total_uncompressed_bytes": 459500168,
+  "weights": [
+    {
+      "model": "denet3d2",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/denet3d2/denet3d2-hsidenoising-epoch-50-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-50",
+      "bytes": 11035172,
+      "sha256": "dbd2fed1454be5f556790eb8e30554c4f2b7e92854942bdd56787987d66230b2"
+    },
+    {
+      "model": "denet3d2",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/denet3d2/denet3d2-complex-noise-mixture-psnr-best-l2.pth",
+      "loss": "l2",
+      "selection": "mixture-psnr-best",
+      "bytes": 11035172,
+      "sha256": "12ce925346572b0ae80ae41d2a1eda02c8fa90e937394f76ee564614e72c33c8"
+    },
+    {
+      "model": "fdenet3d2",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/fdenet3d2/fdenet3d2-hsidenoising-epoch-50-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-50",
+      "bytes": 29843046,
+      "sha256": "78724f9c377a9a85965f9dd2ed21aec06f735c62358b2267c1a49a0a01043bef"
+    },
+    {
+      "model": "fdenet3d2",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/fdenet3d2/fdenet3d2-complex-noise-mixture-psnr-best-l2.pth",
+      "loss": "l2",
+      "selection": "mixture-psnr-best",
+      "bytes": 29843046,
+      "sha256": "16568a314a47098fbe3a6efca99f1333db519fd24d53fc73b36a2b7e78758767"
+    },
+    {
+      "model": "fdenet3d_t4",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/fdenet3d_t4/fdenet3d_t4-hsidenoising-epoch-50-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-50",
+      "bytes": 32944038,
+      "sha256": "0c74e3c397ab7f481c66e5316173e0dcdec4d5e20c88ca0cc882d0ea1135feab"
+    },
+    {
+      "model": "fdenet3d_t4",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/fdenet3d_t4/fdenet3d_t4-complex-noise-mixture-psnr-best-l2.pth",
+      "loss": "l2",
+      "selection": "mixture-psnr-best",
+      "bytes": 32944038,
+      "sha256": "146eb205ba53b7af542b35738faafe5589307e978e66a0688d3a3c5356666db1"
+    },
+    {
+      "model": "man",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/man/man-hsidenoising-epoch-50-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-50",
+      "bytes": 9919909,
+      "sha256": "8844c15eaeea4f20a8b3a2c1afbddeca9318ef5e0cb74d852c699730c2405e99"
+    },
+    {
+      "model": "man",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/man/man-hsidenoising-epoch-130-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-130",
+      "bytes": 9919909,
+      "sha256": "0f35fa061eb480a7227ebdd409379e827d5d2cbe2716bd7b0a872f3c10f1c18b"
+    },
+    {
+      "model": "fman",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/fman/fman-hsidenoising-epoch-80-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-80",
+      "bytes": 23762885,
+      "sha256": "54527d09e8edc367f2878f93a7a872709056b5ecb39f3842a3f6972d8380563f"
+    },
+    {
+      "model": "fman",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/fman/fman-hsidenoising-epoch-130-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-130",
+      "bytes": 23762885,
+      "sha256": "85dadc6691f9f87dac6e8a64fde71d4baebbd2b669ab33d86b18c7e75d475019"
+    },
+    {
+      "model": "fman_t4",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/fman_t4/fman_t4-hsidenoising-epoch-80-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-80",
+      "bytes": 5088069,
+      "sha256": "d3469e89ab8db0052ba19adbc905ce8194adac41bc3a814ee3b1b18b4540e1bb"
+    },
+    {
+      "model": "fman_t4",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/fman_t4/fman_t4-hsidenoising-epoch-130-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-130",
+      "bytes": 5088069,
+      "sha256": "6dd7938cddf0bd51d5be81689031987b4979cf944e7ff6b25b7709193ab3d66a"
+    },
+    {
+      "model": "memnet3d2_plus",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/memnet3d2_plus/memnet3d2_plus-hsidenoising-epoch-50-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-50",
+      "bytes": 11087615,
+      "sha256": "a7ee253a321f59ba4a8b83eb6237f8caf9ebd06d675e0069b3328786055b6c45"
+    },
+    {
+      "model": "memnet3d2_plus",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/memnet3d2_plus/memnet3d2_plus-complex-noise-mixture-psnr-best-l2.pth",
+      "loss": "l2",
+      "selection": "mixture-psnr-best",
+      "bytes": 11087615,
+      "sha256": "8597e35c80be20d0bd86e41c1a51f8a3b0db033a8a90eadaecdd7794eef278ea"
+    },
+    {
+      "model": "fmemnet3d2_plus",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/fmemnet3d2_plus/fmemnet3d2_plus-hsidenoising-epoch-50-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-50",
+      "bytes": 27730928,
+      "sha256": "998a1f095e3a904103eff4a1669c223b6c75e56b536709d9eeb5a607d7bbd866"
+    },
+    {
+      "model": "fmemnet3d2_plus",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/fmemnet3d2_plus/fmemnet3d2_plus-complex-noise-mixture-psnr-best-l2.pth",
+      "loss": "l2",
+      "selection": "mixture-psnr-best",
+      "bytes": 27730928,
+      "sha256": "f16ba3041e8bd728e0614c7d0654050e0aec4d19426c1c360a4cd4b473c95c7d"
+    },
+    {
+      "model": "fmemnet3d2_plus_t4",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/fmemnet3d2_plus_t4/fmemnet3d2_plus_t4-hsidenoising-epoch-50-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-50",
+      "bytes": 31449712,
+      "sha256": "6abf3e041b0eda0efd0746e5790c5cfb3cffad5319639197a5e5f50c3938afb9"
+    },
+    {
+      "model": "fmemnet3d2_plus_t4",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/fmemnet3d2_plus_t4/fmemnet3d2_plus_t4-complex-noise-mixture-psnr-best-l2.pth",
+      "loss": "l2",
+      "selection": "mixture-psnr-best",
+      "bytes": 31449712,
+      "sha256": "b480070e7975694cbb57a75d6e338b0dc72a62b6d5597a8e3aa8f59b3bc90124"
+    },
+    {
+      "model": "qrnn3d_wf",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/qrnn3d_wf/qrnn3d_wf-hsidenoising-epoch-50-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-50",
+      "bytes": 10380122,
+      "sha256": "ba6aaa4327f7b8d60cd3df9b90ef284d977edfe446fd5e963e93fe71a93bbf4d"
+    },
+    {
+      "model": "qrnn3d_wf",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/qrnn3d_wf/qrnn3d_wf-hsidenoising-epoch-100-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-100",
+      "bytes": 10380122,
+      "sha256": "e96d7cbdcd7bad8cb5e9757abee1ae90b809a86d58b958773096a6d9509575f9"
+    },
+    {
+      "model": "fqrnn3d",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/fqrnn3d/fqrnn3d-hsidenoising-epoch-50-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-50",
+      "bytes": 29974838,
+      "sha256": "e2ce84e95d36244000d42df0f7b9b3f3252c0de40ff7c55fb82367390df3d26a"
+    },
+    {
+      "model": "fqrnn3d",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/fqrnn3d/fqrnn3d-hsidenoising-epoch-100-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-100",
+      "bytes": 29974838,
+      "sha256": "59eccbdc77b2d6c81178068def3104e74c200321e2bb405de20d3669e526a4e9"
+    },
+    {
+      "model": "fqrnn3d_t4",
+      "task": "gaussian",
+      "target_path": "checkpoints/paper-v1/fqrnn3d_t4/fqrnn3d_t4-hsidenoising-epoch-50-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-50",
+      "bytes": 6533750,
+      "sha256": "e24d446d68bb017896192a77dbb036b224ac669f17838f75b3ad802e6aa8b85b"
+    },
+    {
+      "model": "fqrnn3d_t4",
+      "task": "complex",
+      "target_path": "checkpoints/paper-v1/fqrnn3d_t4/fqrnn3d_t4-hsidenoising-epoch-100-l2.pth",
+      "loss": "l2",
+      "selection": "epoch-100",
+      "bytes": 6533750,
+      "sha256": "cf4a8c017fb4b813d1c474a8e7e38ca75279393bdb4968f3d8bddf22d3733c10"
+    }
+  ]
+}

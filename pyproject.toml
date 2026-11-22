@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freconv"
+version = "1.0.0rc1"
+description = "Fourier-basis rotation-equivariant 3D convolution for hyperspectral image denoising"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9,<3.10"
+dependencies = [
+  "numpy",
+  "torch>=1.8.1",
+]
+
+[project.optional-dependencies]
+experiments = [
+  "torchvision>=0.9.1",
+  "scipy",
+  "h5py",
+  "PyYAML",
+  "scikit-image==0.19.2",
+  "opencv-python",
+]
+
+[project.urls]
+Repository = "https://github.com/gladxywei/FRE-Conv"
+Checkpoints = "https://github.com/gladxywei/FRE-Conv/releases/tag/checkpoints-v1"
+
+[tool.setuptools]
+license-files = ["LICENSE", "LICENSES/*.txt", "THIRD_PARTY_NOTICES.md"]
+
+[tool.setuptools.packages.find]
+include = ["freconv*"]

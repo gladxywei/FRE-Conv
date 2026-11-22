@@ -1,0 +1,16 @@
+name: freconv
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.9.5
+  - pytorch=1.8.1
+  - torchvision=0.9.1
+  - cudatoolkit=10.2
+  - numpy
+  - scipy
+  - h5py
+  - pyyaml
+  - scikit-image=0.19.2
+  - opencv
+  - pip
